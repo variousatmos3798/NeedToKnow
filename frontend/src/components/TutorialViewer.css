@@ -1,0 +1,160 @@
+.tutorial-viewer {
+  padding: 1.5rem 0;
+}
+
+.tutorial-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.version-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sources {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.refinement-notes {
+  padding: 1rem;
+  background: #fff9e6;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.refinement-notes strong {
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.refinement-notes p {
+  margin: 0;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+.tutorial-section {
+  margin-bottom: 2.5rem;
+}
+
+.tutorial-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.overview {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.prerequisites, .pitfalls, .verification {
+  list-style: none;
+  padding: 0;
+}
+
+.prerequisites li, .pitfalls li, .verification li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  line-height: 1.6;
+}
+
+.pitfalls li {
+  border-left-color: #ffc107;
+  background: #fff9e6;
+}
+
+.verification li {
+  border-left-color: #28a745;
+  background: #d4edda;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.step:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.1);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.step-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.step-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-details li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+}
+
+.step-details li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}

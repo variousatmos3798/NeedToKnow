@@ -1,0 +1,107 @@
+.version-history {
+  padding: 1rem 0;
+}
+
+.history-intro {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.version-history-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #666;
+}
+
+.versions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.version-item {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.version-item:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.1);
+}
+
+.version-header {
+  margin-bottom: 1rem;
+}
+
+.version-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.version-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.version-number.current {
+  color: #667eea;
+}
+
+.version-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.changes-summary {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.changes-summary strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.changes-summary p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.version-stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.version-stats span {
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .version-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .version-stats {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
